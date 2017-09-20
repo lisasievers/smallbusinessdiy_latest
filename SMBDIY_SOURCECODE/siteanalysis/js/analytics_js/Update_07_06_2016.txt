@@ -1,0 +1,7 @@
+1. Client.js
+2. useragent.js file. 
+
+
+3. Keep in mind to change the localhost to base_url. 
+
+

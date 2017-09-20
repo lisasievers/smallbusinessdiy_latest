@@ -1,0 +1,205 @@
+2017/09/17 06:16:07 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'keyword' at row 1. The SQL statement executed was: UPDATE `ca_metatags` SET `title`=:title, `keyword`=:keyword, `description`=:description, `ogproperties`=:ogproperties WHERE wid=:wid.
+2017/09/17 06:17:14 [error] [php] Only variables should be passed by reference (/var/www/html/review/website_review/controllers/ParseController.php:64)
+Stack trace:
+#0 /var/www/html/review/framework/web/filters/CFilterChain.php(133): ParseController->runAction()
+#1 /var/www/html/review/framework/web/CController.php(291): CFilterChain->run()
+#2 /var/www/html/review/framework/web/CController.php(265): ParseController->runActionWithFilters()
+#3 /var/www/html/review/framework/web/CWebApplication.php(282): ParseController->run()
+#4 /var/www/html/review/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/review/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/html/review/index.php(17): CWebApplication->run()
+REQUEST_URI=/review/parse/pagespeed/domain/rediff.com/language/en
+2017/09/17 06:17:31 [error] [php] Only variables should be passed by reference (/var/www/html/review/website_review/controllers/ParseController.php:64)
+Stack trace:
+#0 /var/www/html/review/framework/web/filters/CFilterChain.php(133): ParseController->runAction()
+#1 /var/www/html/review/framework/web/CController.php(291): CFilterChain->run()
+#2 /var/www/html/review/framework/web/CController.php(265): ParseController->runActionWithFilters()
+#3 /var/www/html/review/framework/web/CWebApplication.php(282): ParseController->run()
+#4 /var/www/html/review/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/review/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/html/review/index.php(17): CWebApplication->run()
+REQUEST_URI=/review/parse/pagespeed/domain/contus.com/language/en
+2017/09/17 06:17:37 [error] [php] Only variables should be passed by reference (/var/www/html/review/website_review/controllers/ParseController.php:64)
+Stack trace:
+#0 /var/www/html/review/framework/web/filters/CFilterChain.php(133): ParseController->runAction()
+#1 /var/www/html/review/framework/web/CController.php(291): CFilterChain->run()
+#2 /var/www/html/review/framework/web/CController.php(265): ParseController->runActionWithFilters()
+#3 /var/www/html/review/framework/web/CWebApplication.php(282): ParseController->run()
+#4 /var/www/html/review/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/review/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/html/review/index.php(17): CWebApplication->run()
+REQUEST_URI=/review/parse/pagespeed/domain/rediff.com/language/en
+2017/09/17 06:18:00 [error] [php] Only variables should be passed by reference (/var/www/html/review/website_review/controllers/ParseController.php:64)
+Stack trace:
+#0 /var/www/html/review/framework/web/filters/CFilterChain.php(133): ParseController->runAction()
+#1 /var/www/html/review/framework/web/CController.php(291): CFilterChain->run()
+#2 /var/www/html/review/framework/web/CController.php(265): ParseController->runActionWithFilters()
+#3 /var/www/html/review/framework/web/CWebApplication.php(282): ParseController->run()
+#4 /var/www/html/review/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/review/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/html/review/index.php(17): CWebApplication->run()
+REQUEST_URI=/review/parse/pagespeed/domain/july.com/language/en
+2017/09/17 06:20:51 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'robotstxt' at row 1. The SQL statement executed was: INSERT INTO `ca_issetobject` (`wid`, `flash`, `iframe`, `nestedtables`, `inlinecss`, `email`, `viewport`, `dublincore`, `printable`, `appleicons`, `robotstxt`, `gzip`) VALUES (:wid, :flash, :iframe, :nestedtables, :inlinecss, :email, :viewport, :dublincore, :printable, :appleicons, :robotstxt, :gzip).
+2017/09/17 06:22:45 [error] [php] Only variables should be passed by reference (/var/www/html/review/website_review/controllers/ParseController.php:64)
+Stack trace:
+#0 /var/www/html/review/framework/web/filters/CFilterChain.php(133): ParseController->runAction()
+#1 /var/www/html/review/framework/web/CController.php(291): CFilterChain->run()
+#2 /var/www/html/review/framework/web/CController.php(265): ParseController->runActionWithFilters()
+#3 /var/www/html/review/framework/web/CWebApplication.php(282): ParseController->run()
+#4 /var/www/html/review/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/review/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/html/review/index.php(17): CWebApplication->run()
+REQUEST_URI=/review/parse/pagespeed/domain/grbdairyfood.com/language/en
+2017/09/17 06:23:03 [error] [php] Only variables should be passed by reference (/var/www/html/review/website_review/controllers/ParseController.php:64)
+Stack trace:
+#0 /var/www/html/review/framework/web/filters/CFilterChain.php(133): ParseController->runAction()
+#1 /var/www/html/review/framework/web/CController.php(291): CFilterChain->run()
+#2 /var/www/html/review/framework/web/CController.php(265): ParseController->runActionWithFilters()
+#3 /var/www/html/review/framework/web/CWebApplication.php(282): ParseController->run()
+#4 /var/www/html/review/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/review/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/html/review/index.php(17): CWebApplication->run()
+REQUEST_URI=/review/parse/pagespeed/domain/dailythanthi.com/language/en
+2017/09/18 02:43:16 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'user_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `ca_website` (`domain`, `md5domain`, `idn`, `added`, `modified`, `score`) VALUES (:domain, :md5domain, :idn, :added, :modified, :score).
+2017/09/18 02:43:21 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'user_id' doesn't have a default value. The SQL statement executed was: INSERT INTO `ca_website` (`domain`, `md5domain`, `idn`, `added`, `modified`, `score`) VALUES (:domain, :md5domain, :idn, :added, :modified, :score).
+2017/09/18 02:46:08 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'lang' at row 1. The SQL statement executed was: INSERT INTO `ca_document` (`wid`, `doctype`, `lang`, `charset`, `css`, `js`, `htmlratio`, `favicon`) VALUES (:wid, :doctype, :lang, :charset, :css, :js, :htmlratio, :favicon).
+2017/09/18 02:48:50 [error] [php] Only variables should be passed by reference (/var/www/html/review/website_review/controllers/ParseController.php:64)
+Stack trace:
+#0 /var/www/html/review/framework/web/filters/CFilterChain.php(133): ParseController->runAction()
+#1 /var/www/html/review/framework/web/CController.php(291): CFilterChain->run()
+#2 /var/www/html/review/framework/web/CController.php(265): ParseController->runActionWithFilters()
+#3 /var/www/html/review/framework/web/CWebApplication.php(282): ParseController->run()
+#4 /var/www/html/review/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/review/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/html/review/index.php(17): CWebApplication->run()
+REQUEST_URI=/review/parse/pagespeed/domain/august.com/language/en
+2017/09/18 02:48:56 [error] [php] Only variables should be passed by reference (/var/www/html/review/website_review/controllers/ParseController.php:64)
+Stack trace:
+#0 /var/www/html/review/framework/web/filters/CFilterChain.php(133): ParseController->runAction()
+#1 /var/www/html/review/framework/web/CController.php(291): CFilterChain->run()
+#2 /var/www/html/review/framework/web/CController.php(265): ParseController->runActionWithFilters()
+#3 /var/www/html/review/framework/web/CWebApplication.php(282): ParseController->run()
+#4 /var/www/html/review/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/review/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/html/review/index.php(17): CWebApplication->run()
+REQUEST_URI=/review/parse/pagespeed/domain/august.com/language/en
+2017/09/18 05:47:45 [error] [php] Only variables should be passed by reference (/var/www/html/review/website_review/controllers/ParseController.php:64)
+Stack trace:
+#0 /var/www/html/review/framework/web/filters/CFilterChain.php(133): ParseController->runAction()
+#1 /var/www/html/review/framework/web/CController.php(291): CFilterChain->run()
+#2 /var/www/html/review/framework/web/CController.php(265): ParseController->runActionWithFilters()
+#3 /var/www/html/review/framework/web/CWebApplication.php(282): ParseController->run()
+#4 /var/www/html/review/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/review/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/html/review/index.php(17): CWebApplication->run()
+REQUEST_URI=/review/parse/pagespeed/domain/tamil.oneindia.com/language/en
+2017/09/18 05:52:00 [error] [php] Only variables should be passed by reference (/var/www/html/review/website_review/controllers/ParseController.php:64)
+Stack trace:
+#0 /var/www/html/review/framework/web/filters/CFilterChain.php(133): ParseController->runAction()
+#1 /var/www/html/review/framework/web/CController.php(291): CFilterChain->run()
+#2 /var/www/html/review/framework/web/CController.php(265): ParseController->runActionWithFilters()
+#3 /var/www/html/review/framework/web/CWebApplication.php(282): ParseController->run()
+#4 /var/www/html/review/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/review/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/html/review/index.php(17): CWebApplication->run()
+REQUEST_URI=/review/parse/pagespeed/domain/tamil.oneindia.com/language/en
+2017/09/18 10:09:16 [error] [php] Only variables should be passed by reference (/var/www/html/review/website_review/controllers/ParseController.php:64)
+Stack trace:
+#0 /var/www/html/review/framework/web/filters/CFilterChain.php(133): ParseController->runAction()
+#1 /var/www/html/review/framework/web/CController.php(291): CFilterChain->run()
+#2 /var/www/html/review/framework/web/CController.php(265): ParseController->runActionWithFilters()
+#3 /var/www/html/review/framework/web/CWebApplication.php(282): ParseController->run()
+#4 /var/www/html/review/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/review/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/html/review/index.php(17): CWebApplication->run()
+REQUEST_URI=/review/parse/pagespeed/domain/cricketbuzz.com/language/en
+2017/09/18 15:53:54 [error] [php] Only variables should be passed by reference (/var/www/html/review/website_review/controllers/ParseController.php:64)
+Stack trace:
+#0 /var/www/html/review/framework/web/filters/CFilterChain.php(133): ParseController->runAction()
+#1 /var/www/html/review/framework/web/CController.php(291): CFilterChain->run()
+#2 /var/www/html/review/framework/web/CController.php(265): ParseController->runActionWithFilters()
+#3 /var/www/html/review/framework/web/CWebApplication.php(282): ParseController->run()
+#4 /var/www/html/review/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/review/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/html/review/index.php(17): CWebApplication->run()
+REQUEST_URI=/review/parse/pagespeed/domain/dailynext.com/language/en
+2017/09/19 19:15:17 [error] [php] Only variables should be passed by reference (/var/www/html/review/website_review/controllers/ParseController.php:64)
+Stack trace:
+#0 /var/www/html/review/framework/web/filters/CFilterChain.php(133): ParseController->runAction()
+#1 /var/www/html/review/framework/web/CController.php(291): CFilterChain->run()
+#2 /var/www/html/review/framework/web/CController.php(265): ParseController->runActionWithFilters()
+#3 /var/www/html/review/framework/web/CWebApplication.php(282): ParseController->run()
+#4 /var/www/html/review/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/review/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/html/review/index.php(17): CWebApplication->run()
+REQUEST_URI=/review/parse/pagespeed/domain/rediff.com/language/en
+2017/09/19 19:15:29 [error] [php] Only variables should be passed by reference (/var/www/html/review/website_review/controllers/ParseController.php:64)
+Stack trace:
+#0 /var/www/html/review/framework/web/filters/CFilterChain.php(133): ParseController->runAction()
+#1 /var/www/html/review/framework/web/CController.php(291): CFilterChain->run()
+#2 /var/www/html/review/framework/web/CController.php(265): ParseController->runActionWithFilters()
+#3 /var/www/html/review/framework/web/CWebApplication.php(282): ParseController->run()
+#4 /var/www/html/review/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/review/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/html/review/index.php(17): CWebApplication->run()
+REQUEST_URI=/review/parse/pagespeed/domain/laracasts.com/language/en
+2017/09/19 19:57:00 [error] [php] Only variables should be passed by reference (/var/www/html/review/website_review/controllers/ParseController.php:64)
+Stack trace:
+#0 /var/www/html/review/framework/web/filters/CFilterChain.php(133): ParseController->runAction()
+#1 /var/www/html/review/framework/web/CController.php(291): CFilterChain->run()
+#2 /var/www/html/review/framework/web/CController.php(265): ParseController->runActionWithFilters()
+#3 /var/www/html/review/framework/web/CWebApplication.php(282): ParseController->run()
+#4 /var/www/html/review/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/review/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/html/review/index.php(17): CWebApplication->run()
+REQUEST_URI=/review/parse/pagespeed/domain/dinamalar.com/language/en
+2017/09/19 20:00:42 [error] [php] Only variables should be passed by reference (/var/www/html/review/website_review/controllers/ParseController.php:64)
+Stack trace:
+#0 /var/www/html/review/framework/web/filters/CFilterChain.php(133): ParseController->runAction()
+#1 /var/www/html/review/framework/web/CController.php(291): CFilterChain->run()
+#2 /var/www/html/review/framework/web/CController.php(265): ParseController->runActionWithFilters()
+#3 /var/www/html/review/framework/web/CWebApplication.php(282): ParseController->run()
+#4 /var/www/html/review/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/review/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/html/review/index.php(17): CWebApplication->run()
+REQUEST_URI=/review/parse/pagespeed/domain/dailythanthi.com/language/en
+2017/09/19 20:38:28 [error] [php] Only variables should be passed by reference (/var/www/html/review/website_review/controllers/ParseController.php:64)
+Stack trace:
+#0 /var/www/html/review/framework/web/filters/CFilterChain.php(133): ParseController->runAction()
+#1 /var/www/html/review/framework/web/CController.php(291): CFilterChain->run()
+#2 /var/www/html/review/framework/web/CController.php(265): ParseController->runActionWithFilters()
+#3 /var/www/html/review/framework/web/CWebApplication.php(282): ParseController->run()
+#4 /var/www/html/review/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/review/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/html/review/index.php(17): CWebApplication->run()
+REQUEST_URI=/review/parse/pagespeed/domain/dinamalar.com/language/en
+2017/09/20 03:00:32 [error] [php] Only variables should be passed by reference (/var/www/html/review/website_review/controllers/ParseController.php:64)
+Stack trace:
+#0 /var/www/html/review/framework/web/filters/CFilterChain.php(133): ParseController->runAction()
+#1 /var/www/html/review/framework/web/CController.php(291): CFilterChain->run()
+#2 /var/www/html/review/framework/web/CController.php(265): ParseController->runActionWithFilters()
+#3 /var/www/html/review/framework/web/CWebApplication.php(282): ParseController->run()
+#4 /var/www/html/review/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/review/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/html/review/index.php(17): CWebApplication->run()
+REQUEST_URI=/review/parse/pagespeed/domain/behindwoods.com/language/en
+2017/09/20 08:30:02 [error] [php] Only variables should be passed by reference (/var/www/html/review/website_review/controllers/ParseController.php:64)
+Stack trace:
+#0 /var/www/html/review/framework/web/filters/CFilterChain.php(133): ParseController->runAction()
+#1 /var/www/html/review/framework/web/CController.php(291): CFilterChain->run()
+#2 /var/www/html/review/framework/web/CController.php(265): ParseController->runActionWithFilters()
+#3 /var/www/html/review/framework/web/CWebApplication.php(282): ParseController->run()
+#4 /var/www/html/review/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/review/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/html/review/index.php(17): CWebApplication->run()
+REQUEST_URI=/review/parse/pagespeed/domain/laracasts.com/language/en
+2017/09/20 11:32:46 [error] [php] Only variables should be passed by reference (/var/www/html/review/website_review/controllers/ParseController.php:64)
+Stack trace:
+#0 /var/www/html/review/framework/web/filters/CFilterChain.php(133): ParseController->runAction()
+#1 /var/www/html/review/framework/web/CController.php(291): CFilterChain->run()
+#2 /var/www/html/review/framework/web/CController.php(265): ParseController->runActionWithFilters()
+#3 /var/www/html/review/framework/web/CWebApplication.php(282): ParseController->run()
+#4 /var/www/html/review/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/html/review/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/html/review/index.php(17): CWebApplication->run()
+REQUEST_URI=/review/parse/pagespeed/domain/dailythanthi.com/language/en

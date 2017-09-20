@@ -1,0 +1,73 @@
+<?php 
+$lang['catch line'] = 'আপনার সাইটের স্বাস্থ্য পরীক্ষা করে দেখুন। পরিক্ষা শেষে আপনি একটি রিপোর্ট পাবেন এবং তা pdf ডাউনলোড করতে পারবেন। রিপর্টে প্রতিটি বিষয়ে আপনার করনীয় সম্পর্কে পরামর্শ দেয়া হবে। একবার ব্যবহার করে দেখুন, এটা কত কাজের। প্রত্যেক সাইট এ্যাডমিনের এটি অত্যন্ত দরকারী ।<br><b>উদাহরনঃ http://codecanyon.com</b>';
+$lang['have a look what other users searched for'] = 'দেখে নিন অন্যান্য ব্যবহারকারীগণ কি কি ওয়েব সাইট পরীক্ষা করেছেন';
+$lang['site health report']="সাইটের স্বাস্থ্য প্রতিবেদন";
+$lang['you will be redirected to report page within few seconds']="কয়েক সেকেন্ডের মধ্যে আপনাকে রিপোর্ট পেজে রিডিরেক্ট করে হবে...";
+$lang['health report']   = "স্বাস্থ্য পরীক্ষার প্রতিবেদন";	
+$lang['comparitive health report']="সাইটের তুলনামূলক স্বাস্থ্য প্রতিবেদন";
+$lang['website compared']="তুলনা করা হয়েছে";
+$lang['follow recommendations of this health report to keep your site healthy']   = "এই রিপোর্টের পরামর্শগুলো অনুসরণ করুন আর আপনার সাইটকে সুস্থ্য রাখুন";	
+$lang['sl']   = "ক্রমিক";	
+$lang['searched at']   = "সার্চ করার সময়";	
+$lang['updated at']   = "হালনাগাদ করার সময়";	
+$lang['examined at']   = "পরীক্ষা করার সময়";	
+$lang['compared at']   = "তুলনা করার সময়";	
+$lang['last updated at']   = "সর্বশেষ হালনাগাদ করার সময়";	
+$lang['message subject']   = "বার্তার বিষয়";	
+$lang['message']   = "বার্তা";	
+$lang['website'] = "ওয়েবসাইট";
+$lang['user log in'] = 'ব্যবহারকারী লগ - ইন';
+$lang['account activation'] =  'একাউন্ট চালু হবার';
+$lang['account activation code' ] = 'অ্যাকাউন্ট অ্যাক্টিভেশন কোড';
+$lang['password recovery'] = 'পাসওয়ার্ড পুনরুদ্ধার';
+$lang['password recovery code'] = 'পাসওয়ার্ড পুনরুদ্ধার কোড';
+$lang['name'] = 'নাম';
+$lang['home'] = "প্রথম পাতা";
+$lang['about'] = "পরিচিতি";
+$lang['features'] = "বৈশিষ্ট্য"; 
+$lang['contact'] = "যোগাযোগ";
+$lang['sign up'] = "নিবন্ধন করুন";
+$lang['login'] = "প্রবেশ করুন";
+$lang['sign up now'] = "এখনই নিবন্ধন করুন";
+$lang['detailed features'] = "বিস্তারিত সুবিধাগুলি"; 
+$lang['recent'] = "সাম্প্রতিক"; 
+$lang['recent health check report'] = "সাম্প্রতিক স্বাস্থ্য পরীক্ষার প্রতিবেদন"; 
+$lang['feel free to contact us'] = "নির্দ্বিধায় আমাদের সাথে যোগাযোগ করুন";
+$lang['captcha'] = "ক্যাপচা";
+$lang['sign up form'] = "নিবন্ধন ফরম";
+$lang['put the answer of captcha'] = "ক্যাপচার উত্তর লিখুন";
+$lang['account activation'] = "এ্যাকাউন্ট চালু করুন";
+$lang['account activation code'] = "এ্যাকাউন্ট অ্যাাক্টিভেশন কোড";
+$lang['i agree'] = "আমি একমত";
+$lang['i do not agree'] = "আমি একমত নই";
+$lang['logout']   = "বাহির";
+$lang['password recovery']   = "পাসওয়ার্ড পুনঃরুদ্ধার";
+$lang['password recovery code']   = "পাসওয়ার্ড পুনঃরুদ্ধার কোড";
+$lang['forget password']   = "পাসওয়ার্ড ভুলে গেছেন?";
+$lang['send recovery data']   = "পাসওয়ার্ড পুনঃরুদ্ধারের তথ্য পাঠান";
+$lang['reset password']   = "নতুন পাসওয়ার্ড সেট করুন";
+$lang['new password']   = "নতুন পাসওয়ার্ড";
+$lang['old password']   = "পুরাতন পাসওয়ার্ড";
+
+
+$lang['results found']   = "টি ফলাফল পাওয়া গেছে";
+$lang['you have not enter any website']   = "আপনি কোন ওয়েব এ্যাড্রেস প্রদান করেন নি";
+$lang['download full list']   = "সম্পূর্ণ লিস্ট ডাউনলোড করুন";
+$lang['sign up to get access to all our awesome features']   = "আমাদের আকরষণীয় সকল ফিচার ব্যবহার করতে এখনই সাইন আপ করুন";
+$lang['you can not download more result using this email, download quota is crossed']   = "এই ইমেইল ব্যবহার করে আপনি আর ডাউনলোড করতে পারবেন না । ডাউনলোডের সীমা পার হয়ে গেছে । ";
+$lang['the download link will be sent to your email']   = "ডাউনলোড লিংক্টি আপনার ইমেইলে পাঠানো হবে";
+$lang['a email has been sent to your email']   = "আপনার ইমেইলে একটি বার্তা পাঠানো হয়েছে";
+$lang["this may take a while to generate pdf and send email"]="পিডিএফ তৈরি করতে এবং ইমেইলে পাঠাতে কিছু সময় লাগতে পারে...";
+$lang["this may take a while to generate pdf"]="পিডিএফ তৈরি করতে কিছু সময় লাগতে পারে...";
+$lang["download pdf"]="পিডিএফ ডাইউনলোড";
+$lang["pdf report has been generated"]="পিডিএফ প্রতিবেদন তৈরি করা হয়েছে";
+$lang['your name']   = "আপনার নাম";
+$lang['your email']   = "আপনার ইমেইল";
+$lang['send report']   = "প্রতিবেদন পাঠান";
+$lang['report']   = "প্রতিবেদন";
+$lang['type web address']   = "ওয়েব এ্যাড্রেস লিখুন";
+$lang["compare with competutor"]   = "প্রতিদ্বন্দির সাথে তুলনা করুন";
+$lang["type competutor web address"]   = "প্রতিদ্বন্দি সাইটের ওয়েব এ্যাড্রেস লিখুন";
+
+
+

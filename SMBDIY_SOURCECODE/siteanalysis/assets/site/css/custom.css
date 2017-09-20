@@ -1,0 +1,57 @@
+.media-heading{color:#F3B840 !important;}
+.media.testimonial .fa{color:#F3B840 !important;}
+.banner-caption .container .row div{background:rgba(0, 0, 0, 0.3)}
+
+.add-970-90 img
+{
+   width:970px;
+   height:90px;
+   margin:0 auto;
+}
+.add-300-250 img
+{
+    width:300px;
+    height:250px;
+    margin:auto auto;
+}
+
+.add-300-600 img
+{
+    width:300px;
+    height:600px;
+    margin:auto auto;
+}
+
+.add-320-100 img
+{
+    width:320px;
+    height:100px;
+    margin:auto auto;
+}
+
+.cover-height
+{
+    color:#FD9A23;
+}
+
+.data-table
+{
+    border-top:2px solid #FD9A23;   
+
+}
+.data-table tr:first-child
+{
+    background:#77658D !important;
+    color:#fff;
+}
+
+.data-table tr:first-child th
+{
+   padding:20px 0 20px 10px;
+}
+
+.data-table tr td
+{    
+    font-size:14px;
+}
+

@@ -1,0 +1,60 @@
+<?php
+
+// admin sidebar
+$lang["administration"] 			= "إدارة";
+$lang["user management"] 			= "إدارةالمستخدم";
+$lang["send notification"] 			= "إرسال إشعار";
+$lang["settings"] 					= "إعدادات";
+$lang["general settings"] 			= "الإعدادات العامة";
+$lang["email settings"] 			= "إعدادات البريد الإلكتروني";
+$lang["payment"] 					= "دفع";
+$lang["dashboard"] 					= "لوحة القيادة";
+$lang["payment settings"] 			= "إعدادات الدفع";
+$lang["payment history"] 			= "تاريخ الدفع";
+$lang["visitor analysis"] 			= "تحليل الزوار";
+$lang["website analysis"] 			= "تحليل الموقع";
+$lang["social network analysis"] 	= "تحليل الشبكات الاجتماعية";
+$lang["rank & index analysis"] 		= "رتبة ومؤشر تحليل";
+$lang["alexa rank"] 				= "مرتبة Alexa";
+$lang["alexa data"] 				= "البيانات Alexa";
+$lang["similarweb data"] 			= "البيانات SimilarWeb";
+$lang["moz check"] 					= "الاختيار MOZ";
+$lang["google page rank"] 			= "google رتبة صفحة";
+$lang["search engine index"] 		= "مؤشر محرك البحث";
+$lang["domain analysis"] 			= "تحليل domain";
+$lang["whois search"] 				= "بحث Whois";
+$lang["dmoz check"] 				= "الاختيار DMOZ ";
+$lang["auction domain list"] 		= "قائمة domain مزاد";
+$lang["ip analysis"] 				= "ip تحليل";
+$lang["my ip information"] 			= "معلوماتي الملكية الفكرية";
+$lang["domain ip information"] 		= "معلومات المجال ip";
+$lang["sites in same ip"] 			= "مواقع في نفس الملكية الفكرية";
+$lang["link analysis"] 				= "تحليل الارتباط";
+$lang["link analyzer"] 				= "رابط محلل";
+$lang["page status check"] 			= "التحقق من حالة الصفحة";
+$lang["keyword analysis"] 			= "تحليل الكلمات الرئيسية";
+$lang["keyword position analysis"] 	= "تحليل الموقف الكلمات الرئيسية";
+$lang["correlated keywords"] 		= "الكلمات الرئيسية المترابطة";
+$lang["keyword auto suggestion"] 	= "اقتراح السيارات الكلمات الرئيسية";
+$lang["backlink & ping"] 			= "صلة عودة وبينغ";
+$lang["google backlink search"] 	= "بحث صلة عودة جوجل";
+$lang["backlink generator"] 		= "مولد صلة عودة";
+$lang["website ping"] 				= "موقع الكتروني ping";
+$lang["malware scan"] 				= "malware تفحص";
+$lang["google adwords scraper"] 	= "في google adWords مكشطة";
+$lang["utilities"] 					= "خدمات";
+$lang["email encoder/decoder"] 		= "البريد الإلكتروني التشفير / فك";
+$lang["metatag generator"] 			= "مولد كهرباء metatag";
+$lang["plagiarism check"] 			= "الاختيار plagiarism";
+$lang["valid email check"] 			= "الاختيار بريد إلكتروني صالح";
+$lang["duplicate email filter"] 	= "مكررة تصفية البريد الإلكتروني";
+$lang["url encoder/decoder"] 		= "التشفير / فك url";
+$lang["robot code generator"] 		= "مولد كهرباء robot code";
+$lang["native api"] 				= "api محلي";
+
+$lang["connectivity settings"] 		= "إعدادات الاتصال";
+$lang["proxy settings"] 			= "إعدادات الوكيل";
+$lang["native widget"]				= "القطعة الأم";
+$lang["keyword analyzer"]			= "محلل الكلمة";
+
+$lang['delete junk files'] = "حذف الملفات غير المرغوب فيه";

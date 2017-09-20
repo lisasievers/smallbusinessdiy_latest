@@ -1,0 +1,361 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Unifield\n"
+"POT-Creation-Date: 2017-01-10 23:03+0530\n"
+"PO-Revision-Date: 2017-01-10 23:03+0530\n"
+"Last-Translator: \n"
+"Language-Team: Grace Themes <support@gracethemes.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _;__;_e;gettext;gettext_noop;esc_attr;esc_attr__;"
+"esc_attr_e;esc_html;esc_html__;esc_html_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:14
+msgid "404 Not Found"
+msgstr ""
+
+#: 404.php:17
+msgid ""
+"Looks like you have taken a wrong turn.....<br />Don't worry... it happens "
+"to the best of us."
+msgstr ""
+
+#: comments.php:68
+msgid "Comments are closed."
+msgstr ""
+
+#: content-page.php:18 content-single.php:33 content.php:32 image.php:56
+#: template-full-width.php:24
+msgid "Pages:"
+msgstr ""
+
+#: content-page.php:23 content-single.php:44 image.php:30 image.php:62
+#: inc/template-tags.php:23
+msgid "Edit"
+msgstr ""
+
+#: content.php:25
+msgid "Read More &raquo;"
+msgstr ""
+
+#: content.php:29
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: footer.php:31
+msgid "All Rights Reserved"
+msgstr ""
+
+#: footer.php:34
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: footer.php:34
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: functions.php:41
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:42
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:54
+msgid "Blog Sidebar"
+msgstr ""
+
+#: functions.php:55
+msgid "Appears on blog page sidebar"
+msgstr ""
+
+#: functions.php:64
+msgid "Footer Widget 1"
+msgstr ""
+
+#: functions.php:65 functions.php:75 functions.php:85 functions.php:95
+msgid "Appears on footer"
+msgstr ""
+
+#: functions.php:74
+msgid "Footer Widget 2"
+msgstr ""
+
+#: functions.php:84
+msgid "Footer Widget 3"
+msgstr ""
+
+#: functions.php:94
+msgid "Footer Widget 4"
+msgstr ""
+
+#: header.php:29
+msgid "Menu"
+msgstr ""
+
+#: header.php:136 header.php:162
+msgid "Read More"
+msgstr ""
+
+#: image.php:20
+#, php-format
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\">%2$s</time></span> at <a href=\"%3$s\">%4$s &times; %5$s</a> in <a "
+"href=\"%6$s\" rel=\"gallery\">%7$s</a>"
+msgstr ""
+
+#: image.php:35
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr ""
+
+#: image.php:36
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: inc/about-themes.php:11 inc/about-themes.php:20
+msgid "About Theme Info"
+msgstr ""
+
+#: inc/about-themes.php:22
+msgid ""
+"Unifield is a Free Corporate WordPress theme. It is Perfect for all "
+"Corporate, Professional, personal, medical and any type of business. It is "
+"user friendly customizer options and Compatible in WordPress Latest Version. "
+"also Compatible with WooCommerce, Nextgen gallery ,Contact Form 7 and many "
+"WordPress popular plugins."
+msgstr ""
+
+#: inc/about-themes.php:23
+msgid "Theme Features"
+msgstr ""
+
+#: inc/about-themes.php:27 inc/about-themes.php:56
+msgid "Theme Customizer"
+msgstr ""
+
+#: inc/about-themes.php:28
+msgid ""
+"The built-in customizer panel quickly change aspects of the design and "
+"display changes live before saving them."
+msgstr ""
+
+#: inc/about-themes.php:32 inc/about-themes.php:57
+msgid "Responsive Ready"
+msgstr ""
+
+#: inc/about-themes.php:33
+msgid ""
+"The themes layout will automatically adjust and fit on any screen resolution "
+"and looks great on any device. Fully optimized for iPhone and iPad."
+msgstr ""
+
+#: inc/about-themes.php:37 inc/about-themes.php:58
+msgid "Cross Browser Compatible"
+msgstr ""
+
+#: inc/about-themes.php:38
+msgid ""
+"Our themes are tested in all mordern web browsers and compatible with the "
+"latest version including Chrome,Firefox, Safari, Opera, IE11 and above."
+msgstr ""
+
+#: inc/about-themes.php:42 inc/about-themes.php:59
+msgid "E-commerce"
+msgstr ""
+
+#: inc/about-themes.php:43
+msgid ""
+"Fully compatible with WooCommerce plugin. Just install the plugin and turn "
+"your site into a full featured online shop and start selling products."
+msgstr ""
+
+#: inc/about-themes.php:50
+msgid "Live Demo"
+msgstr ""
+
+#: inc/about-themes.php:51
+msgid "Purchase Pro"
+msgstr ""
+
+#: inc/about-themes.php:52
+msgid "Documentation"
+msgstr ""
+
+#: inc/about-themes.php:60
+msgid "Contact Form 7 Plugin Compatible"
+msgstr ""
+
+#: inc/about-themes.php:61
+msgid "User Friendly"
+msgstr ""
+
+#: inc/about-themes.php:62
+msgid "Translation Ready"
+msgstr ""
+
+#: inc/about-themes.php:63
+msgid "Many Other Plugins  Compatible"
+msgstr ""
+
+#: inc/customizer.php:25
+msgid "Layout Option"
+msgstr ""
+
+#: inc/customizer.php:35
+msgid "Check to Box Layout"
+msgstr ""
+
+#: inc/customizer.php:46
+msgid "Color Scheme"
+msgstr ""
+
+#: inc/customizer.php:47
+msgid "More color options in PRO Version"
+msgstr ""
+
+#: inc/customizer.php:55
+msgid "Slider Settings"
+msgstr ""
+
+#: inc/customizer.php:57
+msgid ""
+"Featured Image Size Should be same ( 1400x600 ) More slider settings "
+"available in PRO Version."
+msgstr ""
+
+#: inc/customizer.php:69
+msgid "Select page for slide one:"
+msgstr ""
+
+#: inc/customizer.php:81
+msgid "Select page for slide two:"
+msgstr ""
+
+#: inc/customizer.php:93
+msgid "Select page for slide three:"
+msgstr ""
+
+#: inc/customizer.php:105
+msgid "Add text for slide read more button"
+msgstr ""
+
+#: inc/customizer.php:118 inc/customizer.php:149 inc/customizer.php:209
+#: inc/customizer.php:241 inc/customizer.php:298
+msgid "Uncheck To Enable This Section"
+msgstr ""
+
+#: inc/customizer.php:125
+msgid "Why Choose Us Section"
+msgstr ""
+
+#: inc/customizer.php:126
+msgid "Select Page from the dropdown for why choose us section"
+msgstr ""
+
+#: inc/customizer.php:155
+msgid "Four Services Boxes Section"
+msgstr ""
+
+#: inc/customizer.php:156
+msgid "Select Pages from the dropdown for four services boxes section"
+msgstr ""
+
+#: inc/customizer.php:215
+msgid "Theme Features Section"
+msgstr ""
+
+#: inc/customizer.php:216
+msgid "Select Page from the dropdown for theme features section"
+msgstr ""
+
+#: inc/customizer.php:228
+msgid "Select page for features page:"
+msgstr ""
+
+#: inc/customizer.php:246
+msgid "Social Settings"
+msgstr ""
+
+#: inc/customizer.php:247
+msgid "Add social icons link here. more social icons available in PRO Version"
+msgstr ""
+
+#: inc/customizer.php:256
+msgid "Add facebook link here"
+msgstr ""
+
+#: inc/customizer.php:266
+msgid "Add twitter link here"
+msgstr ""
+
+#: inc/customizer.php:275
+msgid "Add google plus link here"
+msgstr ""
+
+#: inc/customizer.php:284
+msgid "Add linkedin link here"
+msgstr ""
+
+#: inc/template-tags.php:23
+msgid "Pingback:"
+msgstr ""
+
+#: inc/template-tags.php:35
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/template-tags.php:126
+#, php-format
+msgid ""
+"<span class=\"posted-on\">Published %1$s</span><span class=\"byline\"> by "
+"%2$s</span>"
+msgstr ""
+
+#: no-results.php:12
+msgid "Nothing Found"
+msgstr ""
+
+#: no-results.php:17
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: no-results.php:21
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: no-results.php:26
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: sidebar.php:11
+msgid "Category"
+msgstr ""
+
+#: sidebar.php:18
+msgid "Archives"
+msgstr ""
+
+#: sidebar.php:25
+msgid "Meta"
+msgstr ""
