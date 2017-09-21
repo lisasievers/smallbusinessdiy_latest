@@ -4,7 +4,7 @@
                     $active_record = true;
                     $db['default']['hostname'] = 'localhost';
                     $db['default']['username'] = 'root';
-                    $db['default']['password'] = 'root#@123';
+                    $db['default']['password'] = '';
                     $db['default']['database'] = 'sitebuilder';
                     $db['default']['dbdriver'] = 'mysqli';
                     $db['default']['dbprefix'] = '';

@@ -15,7 +15,7 @@
 |
 */
 //$config['base_url'] = "http://localhost/Varendra/";
-$config['base_url'] = "https://smallbusinessdiy.com/siteresponsive/";
+$config['base_url'] = "http://localhost/sitehome/siteresponsive/";
 
 //$config['server_root']=$_SERVER['DOCUMENT_ROOT'];
 

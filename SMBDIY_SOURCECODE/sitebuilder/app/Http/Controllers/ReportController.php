@@ -78,9 +78,10 @@ public function postAddsites(Request $request)
    $isvalid=$this->validate($request, [
             'site_name' => 'required|max:180'
             ]);
+	$site_name=str_replace(array("www.","http://","https://"), "", $request->get('site_name'));
     $pay = new Website();
     $pay->user_id = Auth::user()->id;
-    $pay->site_name = $request->get('site_name');
+    $pay->site_name = $site_name;
     $pay->date_time = date('Y-m-d H:i:s');
     $pay->site_trashed = 0;
     $pay->save();

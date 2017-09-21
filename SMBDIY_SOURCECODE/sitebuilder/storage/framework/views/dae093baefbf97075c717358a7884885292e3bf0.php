@@ -1,6 +1,3 @@
-<div class="signupstage">
-<?php $__env->startSection('page_heading','Add New Website & Payment Details'); ?>
-</div>
 <?php $__env->startSection('section'); ?>
 <div class="col-sm-12 ">
 	 <?php if( Auth::user()->type == 'admin'): ?>

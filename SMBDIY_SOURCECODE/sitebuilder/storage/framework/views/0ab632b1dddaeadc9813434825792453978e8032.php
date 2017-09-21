@@ -12,9 +12,11 @@
                 </div>
                 <?php Session::forget('error');?>
                 <?php endif; ?>
-    <form role="form" id="ReportSite" action="<?php echo e(route('user-reports-addition')); ?>" method="post">
+    <form role="form" id="ReportSite" action="<?php echo e(route('user-package-addition')); ?>" method="post">
 
-      
+       <input type="hidden" name="_token" value="<?php echo e(Session::token()); ?>">
+     <input id="email" type="hidden" class="form-control" name="email" value="<?php echo e(Session::get('email')); ?>" />  
+            
 
                 <div class="payment-inputs">
                                       
@@ -31,7 +33,7 @@
                     </div>-->
                 </div>
                 <div class="panel-body">
-                    <div class="form-group">
+                    <!--<div class="form-group">
 
                         <label for="site_name">
                             WEBSITE NAME</label>
@@ -47,8 +49,22 @@
                                 <?php endif; ?>
                             
                         </div>
-                    </div>
+                    </div>-->
+                    <div class="form-group">
 
+                        <label for="site_name">
+                            SUBSCRIPTION NAME</label>
+                        <div class="form-group<?php echo e($errors->has('site_name') ? ' has-error' : ''); ?>">
+                            <input id="subscribe_id" type="hidden" class="form-control" name="subscribe_id" value="<?php echo e($packages['id']); ?>" /> 
+                             <input id="site_name" type="text" class="form-control" placeholder="Package Name" name="subscribe_name" value="<?php echo e($packages['name']); ?> - <?php echo e($packages['validity']); ?> Months Validity." readonly />
+                                <?php if($errors->has('site_name')): ?>
+                                    <span class="help-block">
+                                        <strong><?php echo e($errors->first('site_name')); ?></strong>
+                                    </span>
+                                <?php endif; ?>
+                            
+                        </div>
+                    </div>
                     <div class="form-group">
                         <label for="cardNumber">
                             CARD NUMBER</label>
@@ -138,7 +154,7 @@
             </div>
         </div>
             <ul class="nav nav-pills nav-stacked">
-                <li class="active"><a href="#"><span class="badge pull-right"><span class="glyphicon glyphicon-usd"></span><?php echo e($ncost); ?></span> Final Payment</a>
+                <li class="active"><a href="#"><span class="badge pull-right"><span class="glyphicon glyphicon-usd"></span><?php echo e($packages['price']); ?></span> Final Payment</a>
                 </li>
             </ul>
             <br/>

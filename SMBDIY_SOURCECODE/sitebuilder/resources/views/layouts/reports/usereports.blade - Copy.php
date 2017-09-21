@@ -6,7 +6,6 @@
 .sitereview-section{border:2px solid blue;}
 .panel-heading{text-align: center;border-bottom-width: 1px;border-bottom-color: green;}
 .small-box-footer{float:right;}
-.btn{font-size:18px;}
 </style>
 <link href="{{ URL::to('src/js/plugins/morris/morris.css') }}" rel="stylesheet">
 <?php if(isset($siteid)!=''){$sid=$siteid;}else{$sid='0';} ?>   
@@ -50,7 +49,7 @@
      <h2>Our Report Tools</h2>
     <div class="col-md-4">
         <div class="tools-box">
-        <a class="btn btn-info btn-embossed btn-block">
+        <a class="btn btn-primary btn-embossed btn-block">
 <img src="{{ URL::to('src/images/icons/responsive.svg') }}" />
 Site Responsive
         </a>
@@ -58,7 +57,7 @@ Site Responsive
     </div>
      <div class="col-md-4">
         <div class="tools-box">
-        <a class="btn btn-info btn-embossed btn-block">
+        <a class="btn btn-primary btn-embossed btn-block">
 <img src="{{ URL::to('src/images/icons/flask.svg') }}" />
 Site Analysis
         </a>
@@ -66,7 +65,7 @@ Site Analysis
     </div>
       <div class="col-md-4">
         <div class="tools-box">
-        <a class="btn btn-info btn-embossed btn-block">
+        <a class="btn btn-primary btn-embossed btn-block">
 <img src="{{ URL::to('src/images/icons/search.svg') }}" />
 Review Tool
         </a>
@@ -77,7 +76,7 @@ Review Tool
      
     <div class="col-md-4">
         <div class="tools-box">
-        <a class="btn btn-info btn-embossed btn-block">
+        <a class="btn btn-primary btn-embossed btn-block">
 <img src="{{ URL::to('src/images/icons/rocket.svg') }}" />
 SEO Tool
         </a>
@@ -85,7 +84,7 @@ SEO Tool
     </div>
      <div class="col-md-4">
         <div class="tools-box">
-        <a class="btn btn-info btn-embossed btn-block">
+        <a class="btn btn-primary btn-embossed btn-block">
 <img src="{{ URL::to('src/images/icons/pig.svg') }}" />
 Competitor Tool
         </a>
@@ -95,8 +94,7 @@ Competitor Tool
 
 @endif
 <!-- result of website -->
-@if( isset($line_chart))
- @if(count($line_chart) > 0 && $from_date !="" )
+    @if(isset($from_date))
     <div class="row">      
                 
                     <div class="col-lg-12">
@@ -105,10 +103,57 @@ Competitor Tool
                                 <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Day Wise Unique User Report From <span id="overview_from_date">{{$from_date}}</span> to <span id="overview_to_date">{{$to_date}}</span></h3>
                             </div>
                             <div class="panel-body chart-responsive">
-                                <div class="chart" id="uservisit" style="height: 300px;"></div>
+                                <div class="chart" id="flotcontainerqq" style="height: 300px;"></div>
                             </div>
                         </div>
                     </div>
+   <script>
+/*$(function() {
+      Morris.Line({
+        element: 'morris-line-chartqq',
+        data: [
+            <?php   
+            if(isset($line_chart)){      
+            foreach($line_chart as $keys=>$value)
+            {
+            //if($keys==''){continue;}
+            //if($val['totalcount']!='0'){$percent=number_format((float)(($value*100)/$val['totalcount']), 2, '.', ''); } else { $percent=0;}
+            ?> 
+            { user: <?php echo $value['user']; ?>, date: '<?php echo "$value[date]"; ?>' },
+            <?php } } ?>
+        ],
+        xkey: 'date',
+        ykeys: ['user'],
+        labels: ['New User'],
+        lineColors: ['#3c8dbc'],
+        resize: true,
+        hideHover: 'auto'
+        
+    });  
+            
+                            
+});  
+*/
+
+</script>
+ <script type="text/javascript">
+ $(document).ready(function() {
+ var visits = <?php echo $flot_data_visits; ?>;
+	var views = <?php echo $flot_data_views; ?>;
+	$('#placeholder').css({
+		height: '400px',
+		width: '600px'
+	});
+	$.plot($('#placeholder'),[
+			{ label: 'Visits', data: visits },
+			{ label: 'Pageviews', data: views }
+		],{
+	        lines: { show: true },
+	        points: { show: true },
+	        grid: { backgroundColor: '#fffaff' }
+	});
+});
+</script>
        
         <div style="margin-top: 30px;" class="col-xs-12"></div>
 
@@ -139,7 +184,7 @@ Competitor Tool
                     <span class="info-box-text" style="font-size: 20px;">Average Stay Time</span>
                     <span class="info-box-number" id="total_unique_visitor">{{$average_stay_time}}</span>
                 </div><!-- /.info-box-content -->
-                
+                <!--<a href="{{$tools['sitespy_website']}}/domain_details_visitor/domain_details/{{$domain_id}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>-->
             </div><!-- /.info-box -->
         </div>
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6">
@@ -149,7 +194,7 @@ Competitor Tool
                     <span class="info-box-text" style="font-size: 20px;">Average Visit</span>
                     <span class="info-box-number" id="total_page_view">{{$average_visit}}</span>
                 </div><!-- /.info-box-content -->
-                
+                <!--<a href="{{$tools['sitespy_website']}}/domain_details_visitor/domain_details/{{$domain_id}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>-->
             </div><!-- /.info-box -->
         </div>
        
@@ -164,14 +209,11 @@ Competitor Tool
 </div>
  </div>
  @endif 
-@endif
 <!-- result of website -->
-
-    @if(isset($alx) && count($alx) > 0)
+    @if(isset($alx) && !empty($alx))
 	<?php
 	$cnt=count($alx);
-	if($cnt >= 2){
-		
+	if($cnt > 1){
 	if($alx[0]->reach_rank == $alx[1]->reach_rank){
 		$arank='<i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i>';$aran=$alx[0]->reach_rank;$aran2=$alx[1]->reach_rank;$ada=$alx[0]->checked_at;$ada2=$alx[1]->checked_at;
 	}
@@ -226,7 +268,6 @@ Competitor Tool
 	
     
 	?>
-	 
 	<style>
 	.arank .col-md-6{padding:0px;}
 	.arank{padding:4px 6px !important;}
@@ -254,7 +295,7 @@ Competitor Tool
 					@endif
                 </div><!-- /.info-box-content -->
 				
-                
+                <!--<a href="{{$tools['sitespy_website']}}/domain_details_visitor/domain_details/{{$domain_id}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>-->
             </div><!-- /.info-box -->
         </div>
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
@@ -277,7 +318,7 @@ Competitor Tool
 					@endif
                 </div><!-- /.info-box-content -->
 				
-                
+                <!--<a href="{{$tools['sitespy_website']}}/domain_details_visitor/domain_details/{{$domain_id}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>-->
             </div><!-- /.info-box -->
         </div>
 		<div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
@@ -300,62 +341,49 @@ Competitor Tool
 					@endif
                 </div><!-- /.info-box-content -->
 				
-                
+                <!--<a href="{{$tools['sitespy_website']}}/domain_details_visitor/domain_details/{{$domain_id}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>-->
             </div><!-- /.info-box -->
         </div>
 	</div>	
 	@endif	
    <div style="margin-top: 30px;" class="col-xs-12"></div>
-   
- @if( isset($site_info))
- @if( count( $site_info ) > 0 )       
+ @if( isset($site_info) && count( $site_info ) > 0 )       
 <!-- Morris Charts -->
                 
                 <!-- /.row -->
 <?php
-//print_r($site_info);
 $count=count($site_info);
-if($count > 2){
 $prelast=$site_info[$count-2]['speed_score'];
 $last=$site_info[$count-1]['speed_score'];
-if($last >= $prelast){$c_speed='<i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i>';$bgc='green';}else{$c_speed='<i class="fa fa-thumbs-down fa-2x" aria-hidden="true"></i>';$bgc='red';}
+if($last > $prelast){$c_speed='<i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i>';$bgc='green';}else{$c_speed='<i class="fa fa-thumbs-down fa-2x" aria-hidden="true"></i>';$bgc='red';}
 $prelasta=$site_info[$count-2]['speed_usability_mobile'];
 $lasta=$site_info[$count-1]['speed_usability_mobile'];
-if($lasta >= $prelasta){$c_usescore= '<i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i>';$bgcs='green';}else{$c_usescore='<i class="fa fa-thumbs-down fa-2x" aria-hidden="true"></i>';$bgcs='red';}
-}
-else
-{
-	$c_speed='<i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i>';$bgc='green';
-	$c_usescore= '<i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i>';$bgcs='green';
-	
-}
+if($lasta > $prelasta){$c_usescore= '<i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i>';$bgcs='green';}else{$c_usescore='<i class="fa fa-thumbs-down fa-2x" aria-hidden="true"></i>';$bgcs='red';}
 ?>
                 <div class="row">
                     
                     <div class="col-lg-6">
                         <div class="panel panel-primary">
-                            <div class="panel-heading" style="background:{{$bgc}};">
-                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Site Speed Score <?php echo $c_speed; ?></h3>
+                            <div class="panel-heading" style="background:{{$bgcs}};">
+                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Site Speed Score <?php echo $c_usescore; ?></h3>
                             </div>
                             <div class="panel-body">
                                 <div id="morris-use-barqq"></div>
-								<div id="speedscore" style="height:312px;width:100%;"></div>
                                 <div class="text-right">
-                                   
+                                   <!-- <a href="{{$tools['sitespy_website']}}/domain/domain_details_view/{{$domain_id}}">View Details <i class="fa fa-arrow-circle-right"></i></a>-->
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="panel panel-primary">
-                            <div class="panel-heading" style="background:{{$bgcs}};">
-                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Responsive & Usability Score <?php echo $c_usescore; ?></h3>
+                            <div class="panel-heading" style="background:{{$bgc}};">
+                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Site Usability Score <?php echo $c_speed; ?></h3>
                             </div>
                             <div class="panel-body">
                                 <div id="flotcontainerww"></div>
-								<div id="useabilityscore" style="height:312px;width:100%;"></div>
                                 <div class="text-right">
-                                    
+                                    <!--<a href="{{$tools['sitespy_website']}}/domain/domain_details_view/{{$domain_id}}">View Details <i class="fa fa-arrow-circle-right"></i></a>-->
                                 </div>
                             </div>
                         </div>
@@ -369,220 +397,131 @@ else
     
 </div>
  </div>
-@endif 
+ 
 @endif
-
-<script src="{{ URL::to('src/js/canvasjs.min.js') }}"></script>
-@if( isset($line_chart))	
-<script type="text/javascript">
-var chart = new CanvasJS.Chart("uservisit",
-			    {      
-			        title:{
-			            text: "",
-			            fontFamily: "Open Sans"
-			        },
-			        animationEnabled: true,
-			 
-			        axisY: {
-						title: "User Count",
-						titleFontSize: 16,
-						includeZero: false,
-			            suffix: ""
-					},
-			        toolTip: {
-			            shared: false,
-			            content: "",
-			            suffix: ""
-			        },
-			        legend: {
-			        	fontSize: 12,
-						fontFamily: "Open Sans",
-						fontColor:"black"
-			            
-			        },
-			        data: [
-			        {        
-			            type: "area", 
-			            showInLegend: true,
-			            name: "User Visits",
-			            markerSize: 20,
-			            color: "rgba(54,158,173,.6)",
-			            legendMarkerType: "square",
-			            suffix: "",
-			            dataPoints: [
-			            <?php   
-						foreach($line_chart as $keys=>$value)
-						{
-							//$tmp=explode('-',$value['date']);
-						?> 
-						{x: new Date('<?php echo $value['date']; ?>'), y: <?php echo $value['user']; ?>},
-						<?php } ?>
-			
-			            
-			            ]
-			        },
-			    
-
-			        ]
-			    });
-
-			chart.render();
-</script>
-@endif			
-@if( isset($site_info))			
+<!--
+<script src="{{ URL::to('src/js/plugins/morris/morris.js') }}"></script>
+<script src="{{ URL::to('src/js/plugins/morris/morris-data.js') }}"></script>
+<script src="{{ URL::to('src/js/plugins/morris/raphael.min.js') }}"></script>-->
 <script>
-	 var chart = new CanvasJS.Chart("speedscore",
-		{
-			theme: "theme3",
-                        animationEnabled: true,
-			title:{
-				text: ""
-			},
-			toolTip: {
-				shared: true
-			},			
-			axisY: {
-				title: "Speed Score",
-				fontFamily: "Open Sans",
-				fontColor:"black",
-				fontSize:8,
-				includeZero: false
-			},
-			axisY2: {
-				title: "Date",
-				titleFontColor:"red"
-			},			
-			data: [ 
-			{
-				type: "column",	
-				name: "Score",
-				legendText: "Date",	
-				axisXType: "secondary",
-				showInLegend: true, 
-				indexLabelFontSize: 8,
-				indexLabelFontColor: "black",
-				indexLabelFontFamily: "Open Sans",
-				dataPoints:[
-		<?php 
-		foreach($site_info as $val){
-			$rep=0;$pay=0;
-			if($val->speed_score==''){continue;}
-			if(isset($val->speed_score)=='' && isset($val->speed_score)=='0'){$rep=0;}else{$rep=$val->speed_score;}
-			//if(isset($val['payment'])=='' && isset($val['payment'])=='0'){$pay=0;}else{$pay=$val['payment'];}
-			?>
-			{label: "<?php echo $val->searched_at ?>", y: <?php echo $rep ?>},
-			<?php } ?>	
-
-
-				]
-			},
-			
-			
-			],
-          legend:{
-            cursor:"pointer",
-            fontSize: 12,
-			fontFamily: "Open Sans",
-			fontColor:"black",
-            itemclick: function(e){
-              if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
-              	e.dataSeries.visible = false;
-              }
-              else {
-                e.dataSeries.visible = true;
-              }
-            	chart.render();
-            }
-          },
-        });
-
-chart.render();
-
-var chart = new CanvasJS.Chart("useabilityscore",
-		{
-			theme: "theme3",
-                        animationEnabled: true,
-			title:{
-				text: ""
-			},
-			toolTip: {
-				shared: true
-			},			
-			axisY: {
-				title: "",
-				fontFamily: "Open Sans",
-				fontColor:"black",
-				fontSize:8,
-				includeZero: false
-			},
-			axisY2: {
-				title: "",
-				titleFontColor:"red"
-			},			
-			data: [ 
-			{
-				type: "column",	
-				name: "Usability Score",
-				legendText: "",	
-				axisXType: "secondary",
-				showInLegend: true, 
-				indexLabelFontSize: 8,
-				indexLabelFontColor: "black",
-				indexLabelFontFamily: "Open Sans",
-				dataPoints:[
-		<?php 
-		foreach($site_info as $val){
-			$rep=0;$pay=0;
-			if($val->speed_usability_mobile==''){continue;}
-			if(isset($val->speed_usability_mobile)=='' && isset($val->speed_usability_mobile)=='0'){$rep=0;}else{$rep=$val->speed_usability_mobile;}
-			//if(isset($val['payment'])=='' && isset($val['payment'])=='0'){$pay=0;}else{$pay=$val['payment'];}
-			?>
-			{label: "<?php echo $val->searched_at ?>", y: <?php echo $rep ?>},
-			<?php } ?>	
-
-
-				]
-			},
-			{
-				type: "column",	
-				name: "Responsive Score",
-				legendText: "",
-				axisYType: "secondary",
-				showInLegend: true,
-				indexLabelFontSize: 8,
-				indexLabelFontColor: "black",
-				indexLabelFontFamily: "Open Sans",
-				dataPoints:[
-		<?php 
-		foreach($site_info as $val){
-			$rep=0;$pay=0;
-			if($val->speed_score_mobile==''){continue;}
-			if(isset($val->speed_score_mobile)=='' && isset($val->speed_score_mobile)=='0'){$pay=0;}else{$pay=$val->speed_score_mobile;}
-			?>
-			{label: "<?php echo $val['name'] ?>", y: <?php echo $pay ?>},
-			<?php } ?>			
-				
-				]
-			}
-			
-			],
-          legend:{
-            cursor:"pointer",
-            fontSize: 12,
-			fontFamily: "Open Sans",
-			fontColor:"black",
-            itemclick: function(e){
-              if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
-              	e.dataSeries.visible = false;
-              }
-              else {
-                e.dataSeries.visible = true;
-              }
-            	chart.render();
-            }
-          },
-        });
-
-chart.render();
+/*$(function() {
+    // Bar Chart
+    Morris.Bar({
+        element: 'morris-bar-chartqq',
+        data: [
+            <?php         
+            foreach($site_info as $keys=>$value)
+            {
+            ?> 
+            { score: <?php echo $value->speed_score;?>, date: '<?php echo "$value->searched_at"; ?>' },
+            <?php } ?>
+        ],
+        xkey: 'date',
+        ykeys: ['score'],
+        labels: ['Score'],
+        barRatio: 0.4,
+        xLabelAngle: 10,
+        hideHover: 'auto',
+        gridTextSize:10,
+        resize: true
+    });
+        Morris.Bar({
+        element: 'morris-use-barqq',
+        data: [
+            <?php         
+            foreach($site_info as $keys=>$value)
+            {
+            ?> 
+            { score: <?php echo $value->speed_usability_mobile;?>, date: '<?php echo "$value->searched_at"; ?>' },
+            <?php } ?>
+        ],
+        xkey: 'date',
+        ykeys: ['score'],
+        labels: ['Score'],
+        barRatio: 0.4,
+        xLabelAngle: 10,
+        hideHover: 'auto',
+        gridTextSize:10,
+        resize: true
+    });
+});    */
 </script>
-@endif
+<script type="text/javascript">
+var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+var data9_1 = [
+    [1, 1530], [2, 6580], [3, 1980],[4, 6630], [5, 8010], [6, 10800],
+    [7, 3530], [8, 7490], [9, 5230],[10, 2580], [11, 6880], [12, 3640]
+];
+ 
+$.fn.UseTooltip = function () {
+    var previousPoint = null;
+     
+    $(this).bind("plothover", function (event, pos, item) {         
+        if (item) {
+            if (previousPoint != item.dataIndex) {
+                previousPoint = item.dataIndex;
+ 
+                $("#tooltip").remove();
+                 
+                var x = item.datapoint[0];
+                var y = item.datapoint[1];                
+                 
+                showTooltip(item.pageX, item.pageY,
+                  months[x-  1] + "<br/>" + "<strong>" + y + "</strong> (" + item.series.label + ")");
+            }
+        }
+        else {
+            $("#tooltip").remove();
+            previousPoint = null;
+        }
+    });
+};
+ 
+function showTooltip(x, y, contents) {
+    $('<div id="tooltip">' + contents + '</div>').css({
+        position: 'absolute',
+        display: 'none',
+        top: y + 5,
+        left: x + 20,
+        border: '2px solid #4572A7',
+        padding: '2px',     
+        size: '10',   
+        'background-color': '#fff',
+        opacity: 0.80
+    }).appendTo("body").fadeIn(200);
+}
+ 
+ 
+$(function () {        
+    $.plot($("#flotcontainerww"),
+        [{
+              data: data9_1,label: "Page View",lines: { show: true},points: { show: true }
+            }
+        ],{            
+            grid: {
+                hoverable: true, 
+                clickable: false, 
+                mouseActiveRadius: 30,
+                backgroundColor: { colors: ["#D1D1D1", "#7A7A7A"] }
+            },
+            xaxis:{
+                   ticks: [
+                            [1, "Jan"], [2, "Feb"], [3, "Mar"], [4, "Apr"], [5, "May"], [6, "Jun"],
+                            [7, "Jul"], [8, "Aug"], [9, "Sep"], [10, "Oct"], [11, "Nov"], [12, "Dec"]
+                   ]
+            }     
+        }
+    );
+ 
+    $("#flotcontainerww").UseTooltip();
+});
+</script>
+
+<!-- Flot Charts JavaScript -->
+<!--[if lte IE 8]><script src="js/excanvas.min.js"></script><![endif]-->
+<!--<script src="{{ URL::to('src/js/plugins/flot/jquery.flot.js') }}"></script>
+<script src="{{ URL::to('src/js/plugins/flot/jquery.flot.tooltip.min.js') }}"></script>
+<script src="{{ URL::to('src/js/plugins/flot/jquery.flot.resize.js') }}"></script>
+<script src="{{ URL::to('src/js/plugins/flot/jquery.flot.pie.js') }}"></script>
+<script src="{{ URL::to('src/js/plugins/flot/flot-data.js') }}"></script>-->
+<!-- End sitespy reports -->

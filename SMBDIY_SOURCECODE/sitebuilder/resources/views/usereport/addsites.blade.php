@@ -6,6 +6,9 @@ form#ProSettings .input-group {
     margin-bottom: 20px;
     
 }
+.web-case{    
+color: red;
+ font-weight: 400;}
 </style>
 <div class="col-sm-12 ">
 	<h2>Add a New Website</h2>
@@ -13,7 +16,7 @@ form#ProSettings .input-group {
 					
                 <div class="input-group {{ $errors->has('site_name') ? 'has-error' : '' }}">
                     <b>Enter Domain Name:</b><br>
-                    <p>Please type without http://, https:// and www. eg:( google.com )</p>
+                    <p class="web-case">Please type without http://, https:// and www. eg:( google.com )</p>
                     <input type="text" class="form-control" id="site_name" name="site_name"  placeholder="Website name *" />
                 </div>
                 

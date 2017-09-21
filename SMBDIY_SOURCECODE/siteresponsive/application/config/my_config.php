@@ -19,5 +19,5 @@ $config['time_zone'] = '' ;
 $config['language'] = 'english';
 $config['sess_use_database'] = TRUE;
 $config['sess_table_name'] = 'ci_sessions';
-$config['project_url'] = 'https://smallbusinessdiy.com';
+$config['project_url'] = 'http://localhost/sitehome';
 $config['mail_capture_label'] = 'Enter your Name and Email';

@@ -80,8 +80,8 @@ class health_check extends Home
        $project_url=$this->config->item('project_url');
        $data["body"]="site/report_seo";
        $data['topmenu']=array('Home' => $project_url,'About Us' => $project_url.'/#aboutus','Products' => $project_url.'/#product','Resources' => $project_url.'/#resource','Blog' => $project_url.'/blog');
-    $data['bmenu1']=array('Account' => $project_url.'/#','Support' => $project_url.'/#','Product Catalog' => $project_url.'/#');
-    $data['bmenu2']= array('Sitemap' => $project_url.'/#','Find Domain' => $project_url.'/#','Whois Search' => $project_url.'/#');
+		$data['bmenu1']=array('Account' => $project_url.'/#','Support' => $project_url.'/#','Product Catalog' => $project_url.'/#');
+		$data['bmenu2']= array('Sitemap' => $project_url.'/#','Find Domain' => $project_url.'/#','Whois Search' => $project_url.'/#');
     
        $this->load->library("site_check");
        $this->config->load('recommendation_config');
@@ -532,6 +532,7 @@ class health_check extends Home
               $reg_status=$this->_mail_sender($from, $to = $resemail, $subject, $message, $mask = $from,$html=1);
               $this->session->set_userdata('mail_sent', 1);
            //response   
+		   
               if($reg_status){
                  if($reporttype=='responsive'){         
                    $this->report_pdf_responsive($id,$domain='',$to=$resemail);

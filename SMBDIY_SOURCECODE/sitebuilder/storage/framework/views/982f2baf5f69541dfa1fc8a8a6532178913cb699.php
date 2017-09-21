@@ -56,15 +56,24 @@
            
             <div class="regform">
             <?php if($errors->any()): ?>
-            <?php foreach($errors->all() as $error): ?>
-                <?php if($error =='The email has already been taken.' ): ?>
-            <div class="alert alert-danger">
+             <div class="alert alert-danger">
                 <button type="button" class="close fui-cross" data-dismiss="alert"></button>
-                Sorry! This email already registered with us!! 
-                 </div>
-                <?php endif; ?>            
+               * Required.<br>
+            <?php foreach($errors->all() as $error): ?>
+                 <?php if($error =='The email has already been taken.' ): ?>
+                Sorry! This email already registered with us!! <br>  
+                <?php endif; ?> 
+                
+                <?php if($error =='The email must be a valid email address.' ): ?>
+                The email must be a valid email address!<br>  
+                <?php endif; ?>  
+
+                <?php if($error =='The password must be at least 6 characters.' ): ?>
+                The password must be at least 6 characters! <br>  
+                <?php endif; ?>  
+                        
             <?php endforeach; ?>
-            
+            </div>
             <?php else: ?>
              <!--<div class="loader"></div>       -->
             <?php endif; ?>

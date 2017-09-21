@@ -507,6 +507,15 @@ class UserController extends Controller
             {
                 $message->to( 'info@smallbusinessdiy.com')->from( $mdata['from'], $mdata['aname'] )->subject( 'SMBDIY Signup' );
             }); */
+			
+			if( count(Mail::failures()) > 0 ) {
+			   Session::flash('message', 'Mail not sent.');
+
+			} else {
+				//echo "No errors, all sent successfully!";
+				Session::flash('message', 'Mail Sent successfully.');
+			}
+
      // echo "HTML Email Sent. Check your inbox.";
 
 			Session::flash('message', 'Register successfully.');

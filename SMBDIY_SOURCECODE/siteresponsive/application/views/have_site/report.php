@@ -3425,7 +3425,7 @@ $(document).ready(function(){
 	});
 
 	$(document).on('click','#exportSubmit',function(){
-		alert('hi');
+		//alert('hi');
 		//var direct_download="<?php echo $direct_download;?>";
 		var resname=$("#repname").val();
 		var resemail=$("#repemail").val();

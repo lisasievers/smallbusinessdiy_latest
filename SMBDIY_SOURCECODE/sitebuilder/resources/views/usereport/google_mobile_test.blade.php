@@ -31,7 +31,12 @@ function listMobileFriendlyIssues(responseJson) {
     resultEl.innerHTML += "Mobile friendly issues:<br>";
     responseJson.mobileFriendlyIssues.forEach(function(issue) {
         resultEl.innerHTML += "<li>" + issue.rule + "</li>"});
-  } else {
+  } 
+  else if(responseJson.testStatus){
+	  resultEl.innerHTML += "Page Unreachable:<br>";
+	  resultEl.innerHTML += responseJson.testStatus.details+"<br>";
+  }
+  else {
     resultEl.innerHTML += "No mobile friendliness issues found!";
   }
 }

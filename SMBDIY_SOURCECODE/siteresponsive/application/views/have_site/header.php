@@ -20,12 +20,14 @@
     <link href="{{ URL::to('src/css/page_pricing.css') }}" rel="stylesheet"> -->
 	<?php echo $this->load->view("site/css_include_site.php"); ?>
 	<?php echo $this->load->view("site/js_include_site.php"); ?>
-	<!--<link href="<?php echo base_url();?>assets/css/bootstrap.min.css" rel="stylesheet">
-	<link href="<?php echo base_url();?>assets/css/flat-ui-pro.css" rel="stylesheet"> -->
+	<!--<link href="<?php //echo base_url();?>assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="<?php //echo base_url();?>assets/css/flat-ui-pro.css" rel="stylesheet"> 
+	<link href="<?php //echo base_url();?>assets/css/font-awesome.css" rel="stylesheet">
+	-->
 	<link href="<?php echo base_url();?>assets/css/login.css" rel="stylesheet">
-	<link href="<?php echo base_url();?>assets/css/font-awesome.css" rel="stylesheet">
+	
 	<!--<link rel="stylesheet" href="{{ URL::to('src/css/build-main.min.css') }}">-->
-    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" type="text/css">
+    <!--<link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" type="text/css">-->
     <style>
 
 

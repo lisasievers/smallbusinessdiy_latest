@@ -13,8 +13,8 @@
 	<meta content="" name="author"/>
     <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
     
-    <link rel="shortcut icon" href="https://storage.googleapis.com/assets-sitebuilder/images/favicon.ico" type="image/icon" >
-    <link rel="icon" href="https://storage.googleapis.com/assets-sitebuilder/images/favicon.ico" type="image/ico" >
+    <link rel="shortcut icon" href="//storage.googleapis.com/assets-sitebuilder/images/favicon.ico" type="image/icon" >
+    <link rel="icon" href="//storage.googleapis.com/assets-sitebuilder/images/favicon.ico" type="image/ico" >
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 	    <!-- Custom CSS -->
     <link href="<?php echo e(asset('src/bootstrap/css/bootstrap.min.css')); ?>" rel="stylesheet">
@@ -23,13 +23,14 @@
     <link href="<?php echo e(asset('src/css/sbadmin/sb-admin-2.css')); ?>" rel="stylesheet"> 
     <link href="<?php echo e(asset('src/css/font-awesome.css')); ?>" rel="stylesheet" type="text/css">
     <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
     
     <script src="<?php echo e(URL::to('src/js/vendor/jquery.min.js')); ?>"></script>
     <!--<script src="<?php echo e(asset('src/assets/scripts/jquery.min.js')); ?>"></script>-->
     <!-- Bootstrap Core JavaScript -->
 
     <script src="<?php echo e(asset('src/bootstrap/js/bootstrap.min.js')); ?>"></script>
+	<script src="https://apis.google.com/js/api.js"></script>
 <script src="<?php echo e(asset('src/assets/scripts/sb-admin-2.js')); ?>" type="text/javascript"></script>
     <script>
         var baseUrl = '<?php echo url('/'); ?>/';
@@ -41,7 +42,18 @@
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
         })
-        
+       function showGoogleDomainsFlow(){
+		console.log(baseUrl); 
+	    gapi.load('domains', function() {
+            gapi.domains.searchAndBuy({
+            partnerId: '6543',
+            successUrl: 'https://smallbusinessdiy.com/sitebuilder/public/userwebsite/builtby',
+            cancelUrl: 'https://smallbusinessdiy.com/sitebuilder/public/userwebsite/domain',
+            defaultTlds: ['com','co'],
+           
+            });
+        });
+	} 
     </script>
 
 
@@ -52,7 +64,7 @@
 <script src="<?php echo e(asset('src/metisMenu/metisMenu.min.js')); ?>" ></script>
 <script src="<?php echo e(asset('src/js/signup.js')); ?>"></script>
 <!-- jQuery easing plugin -->
-<script src="http://thecodeplayer.com/uploads/js/jquery.easing.min.js" type="text/javascript"></script>
+<script src="<?php echo e(asset('src/js/jquery.easing.min.js')); ?>"></script>
     <!-- Metis Menu Plugin JavaScript -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" type="text/javascript"></script>
 <script src="<?php echo e(URL::to('src/bootstrap/js/bootstrap-checkbox.js')); ?>"></script>

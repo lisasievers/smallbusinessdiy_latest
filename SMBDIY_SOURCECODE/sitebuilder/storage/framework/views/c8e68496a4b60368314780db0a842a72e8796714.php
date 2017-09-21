@@ -27,7 +27,9 @@
 	</script>
 </head>
 <body>
-
+	<?php
+    header('X-Frame-Options: GOFORIT'); 
+	?>
 	<?php echo $__env->yieldContent('content'); ?>
 
 	<script>

@@ -70,10 +70,10 @@ Thank you for visiting us at SmallBusinessDIY.com! We are here to help! Please d
         </div>        
     </div> <!-- footer section -->
 
-	<script src="<?php echo base_url();?>assets/js/jquery.min.js"></script>
-	<!--<script src="<?php echo base_url();?>assets/js/flat-ui-pro.min.js"></script>-->
+	<!--<script src="<?php //echo base_url();?>assets/js/jquery.min.js"></script>-->
+	<script src="<?php echo base_url();?>assets/js/flat-ui-pro.min.js"></script>
     
 	<!--<script src="{{ URL::to('src/js/build/login.min.js') }}" type="text/javascript"></script>-->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" type="text/javascript"></script>
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" type="text/javascript"></script>-->
 </body>
 </html>
